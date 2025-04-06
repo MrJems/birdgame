@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ChatGPT Flappy Bird</title>
+    <style>
+        body {
+            center;
+            align-items:
+                center;
+            height: 100vh;
+        }
+
+        canvas {
+            border: 2px solid #000000;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            font-family: fantasy;
+            font-size: 16px;
+            background-color: sandybrown;
+            color: black;
+            margin: 8px;
+            border-color: lightgray;
+            border-width: 4px;
+            border-radius: 8px;
+            padding: 8px;
+
+        }
+
+        button:hover {
+            background-color: lightgreen;
+        }
+
+        .controlPanel {
+            background-color: #00C010;
+            margin: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="body-id" style="font-family:Verdana; text-align:center; background-color: #985e3e">
+
+    <div class="controlPanel" style="border: 2px solid #000000;">
+        <button id="startButton">START</button>
+    </div>
+
+    <div id="game-canvas-container">
+        <canvas id="gameCanvas" width="512" height="640"
+            style="background-color: lightblue; display: block; margin: 0 auto;"></canvas>
+
+        <div class="controlPanel" style="border: 2px solid #000000;">
+            <h3 style="color: black; margin-top: 0"> Press SPACEBAR to Flap.</h2>
+                <h4 style="color:yellow; margin-top: -8; margin-bottom: 4;"> Fly Through Pipes for Points!</h2>
+                    <span>@Telar Karan</span>
+        </div>
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+
+</html>
